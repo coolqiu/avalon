@@ -15,7 +15,7 @@
 FactoryGirl.define do
   factory :user do
     email { Faker::Internet.email }
-    username { [Faker::Name.last_name.gsub("'",""),Faker::Name.first_name.gsub("'","")].join('.').downcase }
+    sequence(:username) {|n| [Faker::Name.last_name.gsub("'",""),Faker::Name.first_name.gsub("'",""),n].join('.').downcase }
 
     factory :administrator do
       after(:create) do |user|
