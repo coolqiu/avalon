@@ -1,7 +1,5 @@
-require 'coveralls'
-Coveralls.wear!
-
 if ENV['COVERAGE'] || ENV['TRAVIS']
+  require 'coveralls'
   require 'simplecov'
   SimpleCov.root(File.expand_path('..', __FILE__))
   SimpleCov.formatter = Coveralls::SimpleCov::Formatter
