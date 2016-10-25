@@ -13,7 +13,6 @@ class EnvironmentConfigurator < ActiveFedora::FileConfigurator
       fedora_url.userinfo = ''
       fedora_url.path = '/rest'
       @fedora_config[:url] = fedora_url.to_s
-      @fedora_config[:base_path] = "/#{Rails.env}"
     else
       super
     end
