@@ -11,7 +11,6 @@ class EnvironmentConfigurator < ActiveFedora::FileConfigurator
       fedora_url = URI.parse(ENV['FEDORA_URL'])
       @fedora_config = { user: fedora_url.user, password: fedora_url.password }
       fedora_url.userinfo = ''
-      fedora_url.path = '/rest'
       @fedora_config[:url] = fedora_url.to_s
     else
       super
