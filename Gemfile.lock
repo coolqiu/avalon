@@ -102,6 +102,14 @@ GIT
     active_encode (0.0.2)
       activesupport
 
+GIT
+  remote: https://github.com/projecthydra-labs/fedora-migrate.git
+  revision: 4038a2251e0f23524d1971b6ccb6f8d326fd91c1
+  specs:
+    fedora-migrate (0.5.0)
+      rchardet
+      rubydora (~> 1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -488,6 +496,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.1.0)
     rake (11.3.0)
+    rchardet (1.6.1)
     rdf (2.1.0)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
@@ -556,6 +565,15 @@ GEM
       multipart-post
       oauth2
     ruby-progressbar (1.8.1)
+    rubydora (1.9.0)
+      activemodel
+      activesupport
+      deprecation
+      equivalent-xml
+      hooks (~> 0.3)
+      mime-types
+      nokogiri
+      rest-client
     rubyzip (1.2.0)
     rvm-capistrano (1.4.1)
       capistrano (>= 2.0.0)
@@ -670,6 +688,7 @@ DEPENDENCIES
   faker
   fakeweb
   fcrepo_wrapper
+  fedora-migrate!
   hashdiff
   hooks
   hydra-head (~> 10.1)
