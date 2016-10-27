@@ -62,6 +62,8 @@ gem 'roo'
 gem 'activerecord-session_store'
 gem 'whenever', git: "https://github.com/javan/whenever.git", require: false
 gem 'with_locking'
+gem 'avalon-about', git: "https://github.com/avalonmediasystem/avalon-about.git"
+gem 'about_page', :git => "git://github.com/sul-dlss/about_page.git"
 
 #MediaElement.js related
 gem 'mediaelement_rails', git: 'https://github.com/avalonmediasystem/mediaelement_rails.git', branch: 'captions'

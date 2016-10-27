@@ -41,6 +41,7 @@
   end
 
   mount BrowseEverything::Engine => '/browse'
+  mount AboutPage::Engine => '/about(.:format)', :as => 'about_page'
 
   # Avalon routes
   match "/authorize", to: 'derivatives#authorize', via: [:get, :post]

@@ -1,4 +1,20 @@
 GIT
+  remote: git://github.com/sul-dlss/about_page.git
+  revision: 0bed296d6ad2666b364594b7da7f2922b1f874a2
+  specs:
+    about_page (0.3.1)
+      rails (>= 3.2)
+      rugged
+
+GIT
+  remote: https://github.com/avalonmediasystem/avalon-about.git
+  revision: 4bb6dda8426bfdad0969bbadb8f921c633d1cda0
+  specs:
+    avalon-about (0.1.0)
+      about_page
+      mediainfo
+
+GIT
   remote: https://github.com/avalonmediasystem/avalon-workflow.git
   revision: 1dd1f63b8110809c42141952890934b9f0f8041e
   branch: hydra10
@@ -557,6 +573,7 @@ GEM
       oauth2
     ruby-progressbar (1.8.1)
     rubyzip (1.2.0)
+    rugged (0.24.0)
     rvm-capistrano (1.4.1)
       capistrano (>= 2.0.0)
     sass (3.4.22)
@@ -643,6 +660,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  about_page!
   active-fedora (~> 11.0)
   active_annotations (~> 0.2.0)
   active_encode!
@@ -650,6 +668,7 @@ DEPENDENCIES
   activerecord-session_store
   acts_as_list
   api-pagination
+  avalon-about!
   avalon-workflow!
   blacklight (~> 6.6)
   bootstrap_form
@@ -712,4 +731,4 @@ DEPENDENCIES
   with_locking
 
 BUNDLED WITH
-   1.13.3
+   1.13.5
